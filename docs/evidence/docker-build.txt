@@ -1,0 +1,225 @@
+#0 building with "desktop-linux" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 783B done
+#1 DONE 0.0s
+
+#2 [internal] load metadata for docker.io/library/gradle:8.14.3-jdk21
+#2 ...
+
+#3 [auth] library/eclipse-temurin:pull token for registry-1.docker.io
+#3 DONE 0.0s
+
+#4 [internal] load metadata for docker.io/library/eclipse-temurin:21-jre-jammy
+#4 ...
+
+#5 [auth] library/gradle:pull token for registry-1.docker.io
+#5 DONE 0.0s
+
+#2 [internal] load metadata for docker.io/library/gradle:8.14.3-jdk21
+#2 ...
+
+#4 [internal] load metadata for docker.io/library/eclipse-temurin:21-jre-jammy
+#4 DONE 11.1s
+
+#2 [internal] load metadata for docker.io/library/gradle:8.14.3-jdk21
+#2 DONE 19.0s
+
+#6 [internal] load .dockerignore
+#6 transferring context: 176B 0.0s done
+#6 DONE 0.0s
+
+#7 [runtime 1/4] FROM docker.io/library/eclipse-temurin:21-jre-jammy@sha256:f04fb34e053148344e83317976114ec3f37e4b830ec8bdab5a2fe3cecd7d010b
+#7 resolve docker.io/library/eclipse-temurin:21-jre-jammy@sha256:f04fb34e053148344e83317976114ec3f37e4b830ec8bdab5a2fe3cecd7d010b 0.0s done
+#7 DONE 0.0s
+
+#8 [runtime 2/4] RUN apt-get update && apt-get install -y --no-install-recommends curl     && rm -rf /var/lib/apt/lists/*     && groupadd --system spring && useradd --system --gid spring spring
+#8 CACHED
+
+#9 [internal] load build context
+#9 transferring context: 3.94kB 0.0s done
+#9 DONE 0.0s
+
+#10 [runtime 3/4] WORKDIR /app
+#10 DONE 0.0s
+
+#11 [build 1/7] FROM docker.io/library/gradle:8.14.3-jdk21@sha256:21bd311ed01360c189b8870c6b6e988199ff10f72d445d02fb39d3cff9da91d7
+#11 resolve docker.io/library/gradle:8.14.3-jdk21@sha256:21bd311ed01360c189b8870c6b6e988199ff10f72d445d02fb39d3cff9da91d7 0.0s done
+#11 DONE 0.2s
+
+#11 [build 1/7] FROM docker.io/library/gradle:8.14.3-jdk21@sha256:21bd311ed01360c189b8870c6b6e988199ff10f72d445d02fb39d3cff9da91d7
+#11 sha256:22dedfc5648c296149c3faf7fb3bfbc2f4cfd9c6bfd19bf7c2ba25d3d6e93aaa 0B / 137.40MB 0.2s
+#11 sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1 0B / 32B 0.2s
+#11 sha256:68219f9f1ea1e6279dd340e404d23631b5799ef3447b2598aca6de27e299bbeb 0B / 54.90kB 0.2s
+#11 sha256:4cc54d95fed047f4a39c7d1a85115a91a56a4fa37a922747ecfb9b9d4339bdcc 0B / 1.28kB 0.2s
+#11 sha256:4cc54d95fed047f4a39c7d1a85115a91a56a4fa37a922747ecfb9b9d4339bdcc 1.28kB / 1.28kB 2.1s done
+#11 sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1 32B / 32B 2.1s done
+#11 sha256:24ebe7eabaf26192ec8e30edade0a6df98ef2590420dfb0ef843456388a54147 0B / 158B 0.2s
+#11 sha256:df8fd45c97cdc03c294a3813fd5dbdfccd2e3609de14ffa984b6f160afbb7edf 0B / 2.28kB 0.2s
+#11 sha256:df8fd45c97cdc03c294a3813fd5dbdfccd2e3609de14ffa984b6f160afbb7edf 2.28kB / 2.28kB 0.5s done
+#11 sha256:a3307ab29355ce71f400857b35cca7442414151b6d8d767171d67282f986ad07 0B / 157.84MB 0.2s
+#11 sha256:a3307ab29355ce71f400857b35cca7442414151b6d8d767171d67282f986ad07 8.39MB / 157.84MB 1.5s
+#11 sha256:24ebe7eabaf26192ec8e30edade0a6df98ef2590420dfb0ef843456388a54147 158B / 158B 2.8s done
+#11 sha256:a3307ab29355ce71f400857b35cca7442414151b6d8d767171d67282f986ad07 18.87MB / 157.84MB 2.3s
+#11 sha256:471f787625b3fe075546114ac04377f6f56102d735dc7c5b036901b0e3f46919 0B / 63.65MB 0.2s
+#11 sha256:68219f9f1ea1e6279dd340e404d23631b5799ef3447b2598aca6de27e299bbeb 54.90kB / 54.90kB 5.2s done
+#11 sha256:22dedfc5648c296149c3faf7fb3bfbc2f4cfd9c6bfd19bf7c2ba25d3d6e93aaa 2.10MB / 137.40MB 5.3s
+#11 sha256:220e5f46c2556ad3d4e13b9f9820a6a493d998f1bc423515840a27d7a4f41ffe 0B / 22.96MB 0.2s
+#11 sha256:a3307ab29355ce71f400857b35cca7442414151b6d8d767171d67282f986ad07 27.26MB / 157.84MB 3.3s
+#11 sha256:a3307ab29355ce71f400857b35cca7442414151b6d8d767171d67282f986ad07 35.65MB / 157.84MB 4.7s
+#11 sha256:a3307ab29355ce71f400857b35cca7442414151b6d8d767171d67282f986ad07 44.04MB / 157.84MB 7.1s
+#11 sha256:471f787625b3fe075546114ac04377f6f56102d735dc7c5b036901b0e3f46919 0B / 63.65MB 5.3s
+#11 sha256:22dedfc5648c296149c3faf7fb3bfbc2f4cfd9c6bfd19bf7c2ba25d3d6e93aaa 7.34MB / 137.40MB 10.4s
+#11 sha256:220e5f46c2556ad3d4e13b9f9820a6a493d998f1bc423515840a27d7a4f41ffe 0B / 22.96MB 5.3s
+#11 sha256:a3307ab29355ce71f400857b35cca7442414151b6d8d767171d67282f986ad07 52.43MB / 157.84MB 9.2s
+#11 sha256:a3307ab29355ce71f400857b35cca7442414151b6d8d767171d67282f986ad07 61.87MB / 157.84MB 10.7s
+#11 sha256:220e5f46c2556ad3d4e13b9f9820a6a493d998f1bc423515840a27d7a4f41ffe 2.10MB / 22.96MB 9.0s
+#11 sha256:471f787625b3fe075546114ac04377f6f56102d735dc7c5b036901b0e3f46919 2.10MB / 63.65MB 10.4s
+#11 sha256:22dedfc5648c296149c3faf7fb3bfbc2f4cfd9c6bfd19bf7c2ba25d3d6e93aaa 12.58MB / 137.40MB 15.5s
+#11 sha256:a3307ab29355ce71f400857b35cca7442414151b6d8d767171d67282f986ad07 70.25MB / 157.84MB 13.1s
+#11 sha256:a3307ab29355ce71f400857b35cca7442414151b6d8d767171d67282f986ad07 78.64MB / 157.84MB 14.7s
+#11 sha256:a3307ab29355ce71f400857b35cca7442414151b6d8d767171d67282f986ad07 88.08MB / 157.84MB 16.7s
+#11 sha256:220e5f46c2556ad3d4e13b9f9820a6a493d998f1bc423515840a27d7a4f41ffe 4.19MB / 22.96MB 14.1s
+#11 sha256:22dedfc5648c296149c3faf7fb3bfbc2f4cfd9c6bfd19bf7c2ba25d3d6e93aaa 19.92MB / 137.40MB 19.7s
+#11 sha256:471f787625b3fe075546114ac04377f6f56102d735dc7c5b036901b0e3f46919 4.19MB / 63.65MB 15.5s
+#11 sha256:a3307ab29355ce71f400857b35cca7442414151b6d8d767171d67282f986ad07 96.47MB / 157.84MB 17.9s
+#11 sha256:a3307ab29355ce71f400857b35cca7442414151b6d8d767171d67282f986ad07 104.86MB / 157.84MB 19.4s
+#11 sha256:22dedfc5648c296149c3faf7fb3bfbc2f4cfd9c6bfd19bf7c2ba25d3d6e93aaa 27.26MB / 137.40MB 22.9s
+#11 sha256:a3307ab29355ce71f400857b35cca7442414151b6d8d767171d67282f986ad07 113.25MB / 157.84MB 20.7s
+#11 sha256:220e5f46c2556ad3d4e13b9f9820a6a493d998f1bc423515840a27d7a4f41ffe 6.29MB / 22.96MB 18.4s
+#11 sha256:a3307ab29355ce71f400857b35cca7442414151b6d8d767171d67282f986ad07 121.63MB / 157.84MB 22.5s
+#11 sha256:471f787625b3fe075546114ac04377f6f56102d735dc7c5b036901b0e3f46919 6.29MB / 63.65MB 20.5s
+#11 sha256:22dedfc5648c296149c3faf7fb3bfbc2f4cfd9c6bfd19bf7c2ba25d3d6e93aaa 34.60MB / 137.40MB 25.6s
+#11 sha256:a3307ab29355ce71f400857b35cca7442414151b6d8d767171d67282f986ad07 131.07MB / 157.84MB 24.1s
+#11 sha256:220e5f46c2556ad3d4e13b9f9820a6a493d998f1bc423515840a27d7a4f41ffe 8.39MB / 22.96MB 22.6s
+#11 sha256:a3307ab29355ce71f400857b35cca7442414151b6d8d767171d67282f986ad07 139.46MB / 157.84MB 26.8s
+#11 sha256:22dedfc5648c296149c3faf7fb3bfbc2f4cfd9c6bfd19bf7c2ba25d3d6e93aaa 41.94MB / 137.40MB 29.7s
+#11 sha256:471f787625b3fe075546114ac04377f6f56102d735dc7c5b036901b0e3f46919 8.39MB / 63.65MB 25.7s
+#11 sha256:a3307ab29355ce71f400857b35cca7442414151b6d8d767171d67282f986ad07 147.85MB / 157.84MB 29.4s
+#11 sha256:220e5f46c2556ad3d4e13b9f9820a6a493d998f1bc423515840a27d7a4f41ffe 10.49MB / 22.96MB 27.7s
+#11 sha256:22dedfc5648c296149c3faf7fb3bfbc2f4cfd9c6bfd19bf7c2ba25d3d6e93aaa 49.28MB / 137.40MB 33.6s
+#11 sha256:a3307ab29355ce71f400857b35cca7442414151b6d8d767171d67282f986ad07 156.24MB / 157.84MB 31.3s
+#11 sha256:a3307ab29355ce71f400857b35cca7442414151b6d8d767171d67282f986ad07 157.84MB / 157.84MB 31.8s done
+#11 sha256:a3629ac5b9f4680dc2032439ff2354e73b06aecc2e68f0035a2d7c001c8b4114 0B / 29.73MB 0.2s
+#11 sha256:471f787625b3fe075546114ac04377f6f56102d735dc7c5b036901b0e3f46919 11.53MB / 63.65MB 30.7s
+#11 sha256:a3629ac5b9f4680dc2032439ff2354e73b06aecc2e68f0035a2d7c001c8b4114 2.10MB / 29.73MB 1.2s
+#11 sha256:a3629ac5b9f4680dc2032439ff2354e73b06aecc2e68f0035a2d7c001c8b4114 4.19MB / 29.73MB 2.0s
+#11 sha256:22dedfc5648c296149c3faf7fb3bfbc2f4cfd9c6bfd19bf7c2ba25d3d6e93aaa 56.62MB / 137.40MB 36.4s
+#11 sha256:220e5f46c2556ad3d4e13b9f9820a6a493d998f1bc423515840a27d7a4f41ffe 12.58MB / 22.96MB 31.3s
+#11 sha256:a3629ac5b9f4680dc2032439ff2354e73b06aecc2e68f0035a2d7c001c8b4114 6.29MB / 29.73MB 2.6s
+#11 sha256:a3629ac5b9f4680dc2032439ff2354e73b06aecc2e68f0035a2d7c001c8b4114 8.39MB / 29.73MB 3.3s
+#11 sha256:a3629ac5b9f4680dc2032439ff2354e73b06aecc2e68f0035a2d7c001c8b4114 10.49MB / 29.73MB 4.1s
+#11 sha256:a3629ac5b9f4680dc2032439ff2354e73b06aecc2e68f0035a2d7c001c8b4114 12.58MB / 29.73MB 4.4s
+#11 sha256:22dedfc5648c296149c3faf7fb3bfbc2f4cfd9c6bfd19bf7c2ba25d3d6e93aaa 63.96MB / 137.40MB 39.1s
+#11 sha256:220e5f46c2556ad3d4e13b9f9820a6a493d998f1bc423515840a27d7a4f41ffe 14.68MB / 22.96MB 34.2s
+#11 sha256:a3629ac5b9f4680dc2032439ff2354e73b06aecc2e68f0035a2d7c001c8b4114 14.68MB / 29.73MB 5.7s
+#11 sha256:471f787625b3fe075546114ac04377f6f56102d735dc7c5b036901b0e3f46919 15.73MB / 63.65MB 35.8s
+#11 sha256:a3629ac5b9f4680dc2032439ff2354e73b06aecc2e68f0035a2d7c001c8b4114 16.78MB / 29.73MB 6.8s
+#11 sha256:a3629ac5b9f4680dc2032439ff2354e73b06aecc2e68f0035a2d7c001c8b4114 18.87MB / 29.73MB 7.4s
+#11 sha256:a3629ac5b9f4680dc2032439ff2354e73b06aecc2e68f0035a2d7c001c8b4114 20.97MB / 29.73MB 8.0s
+#11 sha256:220e5f46c2556ad3d4e13b9f9820a6a493d998f1bc423515840a27d7a4f41ffe 16.78MB / 22.96MB 38.1s
+#11 sha256:22dedfc5648c296149c3faf7fb3bfbc2f4cfd9c6bfd19bf7c2ba25d3d6e93aaa 70.25MB / 137.40MB 44.2s
+#11 sha256:a3629ac5b9f4680dc2032439ff2354e73b06aecc2e68f0035a2d7c001c8b4114 23.07MB / 29.73MB 10.4s
+#11 sha256:a3629ac5b9f4680dc2032439ff2354e73b06aecc2e68f0035a2d7c001c8b4114 25.17MB / 29.73MB 11.0s
+#11 sha256:471f787625b3fe075546114ac04377f6f56102d735dc7c5b036901b0e3f46919 18.87MB / 63.65MB 40.9s
+#11 sha256:a3629ac5b9f4680dc2032439ff2354e73b06aecc2e68f0035a2d7c001c8b4114 27.26MB / 29.73MB 11.7s
+#11 sha256:220e5f46c2556ad3d4e13b9f9820a6a493d998f1bc423515840a27d7a4f41ffe 18.87MB / 22.96MB 41.2s
+#11 sha256:a3629ac5b9f4680dc2032439ff2354e73b06aecc2e68f0035a2d7c001c8b4114 29.36MB / 29.73MB 12.3s
+#11 sha256:a3629ac5b9f4680dc2032439ff2354e73b06aecc2e68f0035a2d7c001c8b4114 29.73MB / 29.73MB 12.8s done
+#11 extracting sha256:a3629ac5b9f4680dc2032439ff2354e73b06aecc2e68f0035a2d7c001c8b4114
+#11 extracting sha256:a3629ac5b9f4680dc2032439ff2354e73b06aecc2e68f0035a2d7c001c8b4114 0.7s done
+#11 sha256:22dedfc5648c296149c3faf7fb3bfbc2f4cfd9c6bfd19bf7c2ba25d3d6e93aaa 77.59MB / 137.40MB 48.4s
+#11 sha256:220e5f46c2556ad3d4e13b9f9820a6a493d998f1bc423515840a27d7a4f41ffe 20.97MB / 22.96MB 44.4s
+#11 sha256:471f787625b3fe075546114ac04377f6f56102d735dc7c5b036901b0e3f46919 23.07MB / 63.65MB 45.9s
+#11 sha256:220e5f46c2556ad3d4e13b9f9820a6a493d998f1bc423515840a27d7a4f41ffe 22.96MB / 22.96MB 47.0s done
+#11 extracting sha256:220e5f46c2556ad3d4e13b9f9820a6a493d998f1bc423515840a27d7a4f41ffe
+#11 extracting sha256:220e5f46c2556ad3d4e13b9f9820a6a493d998f1bc423515840a27d7a4f41ffe 0.7s done
+#11 extracting sha256:a3307ab29355ce71f400857b35cca7442414151b6d8d767171d67282f986ad07
+#11 sha256:22dedfc5648c296149c3faf7fb3bfbc2f4cfd9c6bfd19bf7c2ba25d3d6e93aaa 82.84MB / 137.40MB 53.5s
+#11 sha256:471f787625b3fe075546114ac04377f6f56102d735dc7c5b036901b0e3f46919 27.26MB / 63.65MB 50.7s
+#11 sha256:22dedfc5648c296149c3faf7fb3bfbc2f4cfd9c6bfd19bf7c2ba25d3d6e93aaa 90.18MB / 137.40MB 56.2s
+#11 extracting sha256:a3307ab29355ce71f400857b35cca7442414151b6d8d767171d67282f986ad07 3.8s done
+#11 extracting sha256:24ebe7eabaf26192ec8e30edade0a6df98ef2590420dfb0ef843456388a54147 0.1s done
+#11 extracting sha256:df8fd45c97cdc03c294a3813fd5dbdfccd2e3609de14ffa984b6f160afbb7edf 0.0s done
+#11 extracting sha256:4cc54d95fed047f4a39c7d1a85115a91a56a4fa37a922747ecfb9b9d4339bdcc 0.0s done
+#11 extracting sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1 0.0s done
+#11 sha256:471f787625b3fe075546114ac04377f6f56102d735dc7c5b036901b0e3f46919 31.46MB / 63.65MB 53.1s
+#11 sha256:22dedfc5648c296149c3faf7fb3bfbc2f4cfd9c6bfd19bf7c2ba25d3d6e93aaa 97.52MB / 137.40MB 58.0s
+#11 sha256:22dedfc5648c296149c3faf7fb3bfbc2f4cfd9c6bfd19bf7c2ba25d3d6e93aaa 104.86MB / 137.40MB 60.0s
+#11 sha256:471f787625b3fe075546114ac04377f6f56102d735dc7c5b036901b0e3f46919 35.65MB / 63.65MB 55.3s
+#11 sha256:22dedfc5648c296149c3faf7fb3bfbc2f4cfd9c6bfd19bf7c2ba25d3d6e93aaa 112.20MB / 137.40MB 61.3s
+#11 sha256:471f787625b3fe075546114ac04377f6f56102d735dc7c5b036901b0e3f46919 39.85MB / 63.65MB 56.7s
+#11 sha256:22dedfc5648c296149c3faf7fb3bfbc2f4cfd9c6bfd19bf7c2ba25d3d6e93aaa 119.54MB / 137.40MB 63.0s
+#11 sha256:471f787625b3fe075546114ac04377f6f56102d735dc7c5b036901b0e3f46919 44.04MB / 63.65MB 58.6s
+#11 sha256:22dedfc5648c296149c3faf7fb3bfbc2f4cfd9c6bfd19bf7c2ba25d3d6e93aaa 126.88MB / 137.40MB 64.3s
+#11 sha256:471f787625b3fe075546114ac04377f6f56102d735dc7c5b036901b0e3f46919 48.23MB / 63.65MB 59.8s
+#11 sha256:22dedfc5648c296149c3faf7fb3bfbc2f4cfd9c6bfd19bf7c2ba25d3d6e93aaa 135.27MB / 137.40MB 65.4s
+#11 sha256:22dedfc5648c296149c3faf7fb3bfbc2f4cfd9c6bfd19bf7c2ba25d3d6e93aaa 137.40MB / 137.40MB 65.6s done
+#11 sha256:471f787625b3fe075546114ac04377f6f56102d735dc7c5b036901b0e3f46919 52.43MB / 63.65MB 60.9s
+#11 sha256:471f787625b3fe075546114ac04377f6f56102d735dc7c5b036901b0e3f46919 56.62MB / 63.65MB 61.8s
+#11 sha256:471f787625b3fe075546114ac04377f6f56102d735dc7c5b036901b0e3f46919 60.82MB / 63.65MB 62.5s
+#11 sha256:471f787625b3fe075546114ac04377f6f56102d735dc7c5b036901b0e3f46919 63.65MB / 63.65MB 63.0s done
+#11 extracting sha256:471f787625b3fe075546114ac04377f6f56102d735dc7c5b036901b0e3f46919
+#11 extracting sha256:471f787625b3fe075546114ac04377f6f56102d735dc7c5b036901b0e3f46919 1.7s done
+#11 DONE 69.8s
+
+#11 [build 1/7] FROM docker.io/library/gradle:8.14.3-jdk21@sha256:21bd311ed01360c189b8870c6b6e988199ff10f72d445d02fb39d3cff9da91d7
+#11 extracting sha256:22dedfc5648c296149c3faf7fb3bfbc2f4cfd9c6bfd19bf7c2ba25d3d6e93aaa
+#11 extracting sha256:22dedfc5648c296149c3faf7fb3bfbc2f4cfd9c6bfd19bf7c2ba25d3d6e93aaa 1.4s done
+#11 DONE 71.2s
+
+#11 [build 1/7] FROM docker.io/library/gradle:8.14.3-jdk21@sha256:21bd311ed01360c189b8870c6b6e988199ff10f72d445d02fb39d3cff9da91d7
+#11 extracting sha256:68219f9f1ea1e6279dd340e404d23631b5799ef3447b2598aca6de27e299bbeb 0.0s done
+#11 DONE 71.3s
+
+#12 [build 2/7] WORKDIR /workspace
+#12 DONE 0.1s
+
+#13 [build 3/7] COPY backend/gradlew backend/settings.gradle backend/build.gradle ./
+#13 DONE 0.2s
+
+#14 [build 4/7] COPY backend/gradle ./gradle
+#14 DONE 0.0s
+
+#15 [build 5/7] RUN sed -i 's/\r$//' gradlew && chmod +x gradlew
+#15 DONE 0.8s
+
+#16 [build 6/7] COPY backend/src ./src
+#16 DONE 0.1s
+
+#17 [build 7/7] RUN gradle --no-daemon test bootJar
+#17 1.384 To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/8.14.3/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+#17 3.384 Daemon will be stopped at the end of the build 
+#17 233.3 > Task :compileJava
+#17 322.6 > Task :processResources
+#17 322.6 > Task :classes
+#17 322.6 > Task :resolveMainClassName
+#17 352.6 > Task :bootJar
+#17 770.5 > Task :compileTestJava
+#17 770.5 > Task :processTestResources
+#17 770.5 > Task :testClasses
+#17 800.5 > Task :test
+#17 855.6 
+#17 855.6 OpenJDK 64-Bit Server VM warning: Sharing is only supported for boot loader classes because bootstrap classpath has been appended
+#17 856.1 2026-10-14T03:14:46.667Z  INFO 307 --- [ionShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+#17 856.2 2026-10-14T03:14:46.672Z  INFO 307 --- [ionShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+#17 856.2 2026-10-14T03:14:46.676Z  INFO 307 --- [ionShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+#17 856.3 
+#17 856.3 BUILD SUCCESSFUL in 14m 15s
+#17 856.3 7 actionable tasks: 7 executed
+#17 DONE 857.0s
+
+#18 [runtime 4/4] COPY --from=build --chown=spring:spring /workspace/build/libs/campus-hub-1.0.0.jar app.jar
+#18 DONE 0.8s
+
+#19 exporting to image
+#19 exporting layers
+#19 exporting layers 1.9s done
+#19 exporting manifest sha256:b16f95eb9f199b2f780772429b12bd56c0bd139257d0bde8bb918846552bff1b 0.0s done
+#19 exporting config sha256:ace45ecad00eadfbf2a230b7a8c96d67d2c0e7e949e20458ef1e6c20c0c9365b 0.0s done
+#19 exporting attestation manifest sha256:093cdd7962d28bc63608de48369174547c7b021cec5e8f0c35fcc7551e4e10ba 0.0s done
+#19 exporting manifest list sha256:41d9c7866298e35ca5e50be5fade4e39d05ff4a0307f7e13904a809323882b8c done
+#19 naming to docker.io/library/campus-hub-backend:latest done
+#19 unpacking to docker.io/library/campus-hub-backend:latest
+#19 unpacking to docker.io/library/campus-hub-backend:latest 0.5s done
+#19 DONE 2.5s

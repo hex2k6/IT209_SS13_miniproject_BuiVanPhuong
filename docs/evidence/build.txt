@@ -1,0 +1,21 @@
+Captured: 2026-10-14 10:15:45 UTC+07
+
+> docker build --progress=plain -t campus-hub-backend:latest .
+(Selected lines; full output: docker-build.txt)
+#17 233.3 > Task :compileJava
+#17 322.6 > Task :processResources
+#17 322.6 > Task :classes
+#17 322.6 > Task :resolveMainClassName
+#17 352.6 > Task :bootJar
+#17 770.5 > Task :compileTestJava
+#17 770.5 > Task :processTestResources
+#17 770.5 > Task :testClasses
+#17 800.5 > Task :test
+#17 856.3 BUILD SUCCESSFUL in 14m 15s
+#17 856.3 7 actionable tasks: 7 executed
+#19 naming to docker.io/library/campus-hub-backend:latest done
+#19 DONE 2.5s
+
+> docker images campus-hub-backend
+REPOSITORY           TAG       IMAGE ID       SIZE
+campus-hub-backend   latest    41d9c7866298   523MB

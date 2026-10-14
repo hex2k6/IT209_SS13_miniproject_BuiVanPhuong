@@ -1,0 +1,17 @@
+.git
+.idea
+.vscode
+.codex
+.agents
+**/.gradle
+**/build
+**/target
+**/node_modules
+frontend
+.env
+.env.*
+*.log
+docs
+output
+tmp
+README.md
